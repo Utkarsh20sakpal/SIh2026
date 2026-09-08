@@ -1,0 +1,132 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ─── Ultra-Clean Modern Industrial Design System ────────────────────────── */
+:root {
+  --background:           #090d14;
+  --background-secondary: #0e1420;
+  --surface:              #121927;
+  --surface-elevated:     #1a2436;
+  --border:               #1e293b;
+  --border-subtle:        rgba(255, 255, 255, 0.07);
+  --border-highlight:     #38bdf8;
+
+  /* Color Accents */
+  --primary:              #38bdf8; /* Sky Cyan */
+  --primary-glow:         rgba(56, 189, 248, 0.2);
+
+  /* Typography */
+  --foreground:           #f1f5f9;
+  --text-secondary:       #94a3b8;
+  --muted:                #64748b;
+
+  /* Severity Hierarchy */
+  --status-normal:        #10b981;
+  --status-warning:       #f59e0b;
+  --status-critical:      #ef4444;
+}
+
+@layer base {
+  *, *::before, *::after {
+    box-sizing: border-box;
+  }
+
+  html {
+    font-size: 14px;
+    background-color: var(--background);
+    color: var(--foreground);
+    color-scheme: dark;
+  }
+
+  body {
+    margin: 0;
+    background-color: var(--background);
+    color: var(--foreground);
+    font-family: 'Inter', system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    overflow-x: hidden;
+  }
+
+  .font-mono-nums {
+    font-family: 'JetBrains Mono', 'Roboto Mono', 'Geist Mono', monospace;
+    font-variant-numeric: tabular-nums;
+  }
+
+  ::-webkit-scrollbar {
+    width: 6px;
+    height: 6px;
+  }
+  ::-webkit-scrollbar-track {
+    background: #090d14;
+  }
+  ::-webkit-scrollbar-thumb {
+    background: #1e293b;
+    border-radius: 3px;
+  }
+  ::-webkit-scrollbar-thumb:hover {
+    background: #38bdf8;
+  }
+}
+
+/* ─── Clean Modern Surfaces & Cards ─────────────────────────────────────── */
+.card-clean {
+  background: rgba(18, 25, 39, 0.85);
+  border: 1px solid rgba(255, 255, 255, 0.08);
+  backdrop-filter: blur(12px);
+  border-radius: 12px;
+}
+
+.card-clean:hover {
+  border-color: rgba(255, 255, 255, 0.15);
+}
+
+.card-elevated {
+  background: rgba(26, 36, 54, 0.9);
+  border: 1px solid rgba(56, 189, 248, 0.3);
+  backdrop-filter: blur(16px);
+  border-radius: 12px;
+  box-shadow: 0 10px 30px -10px rgba(0, 0, 0, 0.5);
+}
+
+/* ─── Status Severity Badges ─────────────────────────────────────────────── */
+.badge-normal {
+  background: rgba(16, 185, 129, 0.15);
+  color: #34d399;
+  border: 1px solid rgba(16, 185, 129, 0.35);
+}
+
+.badge-warning {
+  background: rgba(245, 158, 11, 0.15);
+  color: #fbbf24;
+  border: 1px solid rgba(245, 158, 11, 0.35);
+}
+
+.badge-critical {
+  background: rgba(239, 68, 68, 0.18);
+  color: #f87171;
+  border: 1px solid rgba(239, 68, 68, 0.45);
+}
+
+/* ─── Laser Scanline Effect for Vision Viewport ──────────────────────────── */
+.scanline {
+  background: linear-gradient(
+    to bottom,
+    rgba(255,255,255,0),
+    rgba(255,255,255,0) 50%,
+    rgba(0, 0, 0, 0.25) 50%,
+    rgba(0, 0, 0, 0.25)
+  );
+  background-size: 100% 4px;
+}
+
+@keyframes laser-sweep {
+  0% { transform: translateY(-100%); opacity: 0.8; }
+  50% { opacity: 1; }
+  100% { transform: translateY(100%); opacity: 0.8; }
+}
+
+.animate-laser {
+  animation: laser-sweep 2s ease-in-out infinite alternate;
+}

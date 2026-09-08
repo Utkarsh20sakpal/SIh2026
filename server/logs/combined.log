@@ -1,0 +1,33 @@
+2026-09-08 16:32:37 [info]: ✓ MongoDB connected
+2026-09-08 16:32:37 [info]: Scheduling Isolation Forest retrain job: */20 * * * * (every 20 minutes)
+2026-09-08 16:32:37 [info]: ✓ All background cron jobs initialized
+2026-09-08 16:32:37 [info]: ✓ Background jobs initialised
+2026-09-08 16:32:37 [info]: ✓ SmartConveyor Shield API running on http://localhost:5000
+2026-09-08 16:33:55 [error]: Unhandled error: Cannot read properties of undefined (reading 'toFixed') {"stack":"TypeError: Cannot read properties of undefined (reading 'toFixed')\n    at C:\\Users\\Krish\\OneDrive\\Desktop\\theme\\server\\src\\routes\\telemetry.js:44:40\n    at process.processTicksAndRejections (node:internal/process/task_queues:105:5)"}
+2026-09-08 16:34:58 [debug]: [IF] Trained 100 trees on 60 samples. threshold=0.6079
+2026-09-08 16:34:58 [info]: ✓ MongoDB connected
+2026-09-08 16:34:58 [info]: Scheduling Isolation Forest retrain job: */20 * * * * (every 20 minutes)
+2026-09-08 16:34:58 [info]: ✓ All background cron jobs initialized
+2026-09-08 16:34:58 [info]: ✓ Background jobs initialised
+2026-09-08 16:34:58 [info]: ✓ SmartConveyor Shield API running on http://localhost:5000
+2026-09-08 16:35:29 [error]: Unhandled error: Bad escaped character in JSON at position 14 (line 1 column 15) {"stack":"SyntaxError: Bad escaped character in JSON at position 14 (line 1 column 15)\n    at JSON.parse (<anonymous>)\n    at parse (C:\\Users\\Krish\\OneDrive\\Desktop\\theme\\server\\node_modules\\body-parser\\lib\\types\\json.js:96:19)\n    at C:\\Users\\Krish\\OneDrive\\Desktop\\theme\\server\\node_modules\\body-parser\\lib\\read.js:128:18\n    at AsyncResource.runInAsyncScope (node:async_hooks:211:14)\n    at invokeCallback (C:\\Users\\Krish\\OneDrive\\Desktop\\theme\\server\\node_modules\\raw-body\\index.js:238:16)\n    at done (C:\\Users\\Krish\\OneDrive\\Desktop\\theme\\server\\node_modules\\raw-body\\index.js:227:7)\n    at IncomingMessage.onEnd (C:\\Users\\Krish\\OneDrive\\Desktop\\theme\\server\\node_modules\\raw-body\\index.js:287:7)\n    at IncomingMessage.emit (node:events:518:28)\n    at endReadableNT (node:internal/streams/readable:1698:12)\n    at process.processTicksAndRejections (node:internal/process/task_queues:90:21)"}
+2026-09-08 16:40:00 [info]: [Cron] Triggering scheduled Isolation Forest retrain cycle...
+2026-09-08 16:40:00 [debug]: [IF] Trained 100 trees on 41 samples. threshold=0.5878
+2026-09-08 16:40:00 [info]: [IF] Retrained on 41 samples in 60ms. Cleared 41 docs. threshold=0.5878
+2026-09-08 16:40:00 [info]: [Cron] IF Retrain result: {"success":true,"sampleCount":41,"threshold":0.5878088618247922,"duration_ms":60}
+2026-09-08 17:00:00 [info]: [Cron] Triggering scheduled Isolation Forest retrain cycle...
+2026-09-08 17:00:00 [debug]: [IF] Trained 100 trees on 120 samples. threshold=0.5712
+2026-09-08 17:00:00 [info]: [IF] Retrained on 120 samples in 35ms. Cleared 120 docs. threshold=0.5712
+2026-09-08 17:00:00 [info]: [Cron] IF Retrain result: {"success":true,"sampleCount":120,"threshold":0.5711808657772005,"duration_ms":35}
+2026-09-08 17:20:00 [info]: [Cron] Triggering scheduled Isolation Forest retrain cycle...
+2026-09-08 17:20:00 [debug]: [IF] Trained 100 trees on 119 samples. threshold=0.5716
+2026-09-08 17:20:01 [info]: [IF] Retrained on 119 samples in 32ms. Cleared 119 docs. threshold=0.5716
+2026-09-08 17:20:01 [info]: [Cron] IF Retrain result: {"success":true,"sampleCount":119,"threshold":0.5715563680879232,"duration_ms":32}
+2026-09-08 17:40:00 [info]: [Cron] Triggering scheduled Isolation Forest retrain cycle...
+2026-09-08 17:40:00 [debug]: [IF] Trained 100 trees on 120 samples. threshold=0.5701
+2026-09-08 17:40:00 [info]: [IF] Retrained on 120 samples in 34ms. Cleared 120 docs. threshold=0.5701
+2026-09-08 17:40:00 [info]: [Cron] IF Retrain result: {"success":true,"sampleCount":120,"threshold":0.5701218147463596,"duration_ms":34}
+2026-09-08 19:20:00 [info]: [Cron] Triggering scheduled Isolation Forest retrain cycle...
+2026-09-08 19:20:00 [debug]: [IF] Trained 100 trees on 194 samples. threshold=0.5709
+2026-09-08 19:20:00 [info]: [IF] Retrained on 194 samples in 37ms. Cleared 194 docs. threshold=0.5709
+2026-09-08 19:20:00 [info]: [Cron] IF Retrain result: {"success":true,"sampleCount":194,"threshold":0.5708733004303289,"duration_ms":37}
